@@ -1,10 +1,10 @@
 [package]
-name = "axolotlsay-js"
-description = "JavaScript port of axolotlsay"
+name = "axolotlsay-bun"
+description = "JavaScript (Bun) port of axolotlsay"
 version = "0.3.0"
 license = "MIT"
-repository = "https://github.com/axodotdev/axolotlsay-js"
-binaries = ["axolotlsay-js"]
+repository = "https://github.com/axodotdev/axolotlsay-bun"
+binaries = ["axolotlsay-bun"]
 build-command = ["bash", "build.sh"]
 
 # Config for 'cargo dist'

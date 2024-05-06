@@ -1,8 +1,11 @@
 /node_modules
 
 # binaries
-/axolotlsay-js*
+/axolotlsay-bun*
 /index*
+
+# but *don't* ignore the source file
+!index.js
 
 # cargo-dist
 /target

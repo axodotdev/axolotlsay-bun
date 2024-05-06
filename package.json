@@ -1,23 +1,15 @@
 {
   "name": "axolotlsay",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "description": "> 📄 a template for axodotdev's open source repositories",
   "main": "index.js",
   "bin": {
     "axolotlsay": "./bin/index.js"
   },
-  "scripts": {
-    "package": "pkg index.js"
-  },
-  "keywords": [
-    "cli"
-  ],
+  "keywords": ["cli"],
   "author": "axodotdev <hello@axo.dev>",
   "license": "MIT-or-Apache2.0",
   "dependencies": {
     "yargs": "^17.7.2"
-  },
-  "devDependencies": {
-    "pkg": "^5.8.1"
   }
 }
