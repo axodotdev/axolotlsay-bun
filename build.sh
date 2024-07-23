@@ -2,7 +2,7 @@
 
 set -eu
 
-EXE_BASENAME=axolotlsay-js
+EXE_BASENAME=axolotlsay-bun
 NODE_VERSION=node18
 
 npm install
