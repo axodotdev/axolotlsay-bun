@@ -10,7 +10,7 @@ build-command = ["bash", "build.sh"]
 # Config for 'cargo dist'
 [dist]
 # The preferred cargo-dist version to use in CI (Cargo.toml SemVer syntax)
-cargo-dist-version = "0.14.0"
+cargo-dist-version = "0.20.0-prerelease.3"
 # CI backends to support
 ci = "github"
 # The installers to generate for each app
@@ -21,3 +21,5 @@ targets = ["aarch64-apple-darwin", "x86_64-apple-darwin", "x86_64-unknown-linux-
 pr-run-mode = "plan"
 # Whether to install an updater program
 install-updater = false
+# Path that installers should place binaries in
+install-path = "CARGO_HOME"
