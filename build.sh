@@ -2,7 +2,7 @@
 
 set -eu
 
-EXE_BASENAME=axolotlsay-js
+EXE_BASENAME=axolotlsay-bun
 
 # Install devDependencies to get bun
 npm install --include=dev
