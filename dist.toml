@@ -1,7 +1,7 @@
 [package]
 name = "axolotlsay-bun"
 description = "JavaScript (Bun) port of axolotlsay"
-version = "0.3.0"
+version = "0.4.0"
 license = "MIT"
 repository = "https://github.com/axodotdev/axolotlsay-bun"
 binaries = ["axolotlsay-bun"]
