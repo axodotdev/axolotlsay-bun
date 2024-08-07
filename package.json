@@ -11,7 +11,14 @@
   "bin": {
     "axolotlsay-bun": "index.js"
   },
+  "scripts": {
+    "predist": "npm install",
+    "dist": "node dist.js"
+  },
   "dependencies": {
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "bun": "^1.1.21"
   }
 }
