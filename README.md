@@ -1,6 +1,7 @@
-# axolotlsay-js
-> an example of packaging and distributing standalone executable binaries from javascript
+# axolotlsay-bun
 
-* Requires a node version that is available here: https://github.com/vercel/pkg-fetch
+> an example of packaging and distributing standalone executables for a JavaScript CLI using [bun build --compile](https://bun.sh/docs/bundler/executables)
 
-To build standalone executables run `npm run package`.
+
+
+

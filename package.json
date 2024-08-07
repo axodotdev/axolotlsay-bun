@@ -1,24 +1,17 @@
 {
-  "name": "axolotlsay",
+  "name": "axolotlsay-bun",
   "version": "0.4.0",
-  "description": "> 📄 a template for axodotdev's open source repositories",
-  "main": "index.js",
-  "bin": {
-    "axolotlsay": "./bin/index.js"
-  },
-  "scripts": {
-    "prebuild": "bun install",
-    "build": "bun build index.js --compile"
-  },
+  "description": "JavaScript port of axolotlsay, demonstrating bun-compile support",
+  "repository": "github:axodotdev/axolotlsay-hybrid",
+  "author": "axodotdev <hello@axo.dev>",
+  "license": "MIT-or-Apache2.0",
   "keywords": [
     "cli"
   ],
-  "author": "axodotdev <hello@axo.dev>",
-  "license": "MIT-or-Apache2.0",
+  "bin": {
+    "axolotlsay-bun": "index.js"
+  },
   "dependencies": {
     "yargs": "^17.7.2"
-  },
-  "devDependencies": {
-    "bun": "^1.1.17"
   }
 }
