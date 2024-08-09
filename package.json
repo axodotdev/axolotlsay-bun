@@ -2,7 +2,7 @@
   "name": "axolotlsay-bun",
   "version": "0.4.0",
   "description": "JavaScript port of axolotlsay, demonstrating bun-compile support",
-  "repository": "github:axodotdev/axolotlsay-hybrid",
+  "repository": "github:axodotdev/axolotlsay-bun",
   "author": "axodotdev <hello@axo.dev>",
   "license": "MIT-or-Apache2.0",
   "keywords": [
