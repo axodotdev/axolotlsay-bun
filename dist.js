@@ -2,7 +2,7 @@
 const packageDir = '.';
 
 const { bin } = require(`${packageDir}/package.json`);
-const execSync = require('child_process').execSync;
+const { execSync } = require('child_process');
 
 // Compute the target we're building for
 const bunTargets = {
@@ -11,11 +11,11 @@ const bunTargets = {
     'x86_64-apple-darwin': 'bun-darwin-x64',
     'aarch64-unknown-linux-gnu': 'bun-linux-arm64',
     'x86_64-unknown-linux-gnu': 'bun-linux-x64'
-}
+};
 const env =  process.env;
 const distTarget = env.CARGO_DIST_TARGET || env.DIST_TARGET;
 if (!distTarget) {
-    throw 'DIST_TARGET isn\'t set, so we don\'t know what platform to build!'
+    throw 'DIST_TARGET isn\'t set, so we don\'t know what platform to build!';
 }
 const bunTarget = bunTargets[distTarget];
 if (!bunTarget) {
