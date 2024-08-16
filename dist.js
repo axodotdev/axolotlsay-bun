@@ -28,7 +28,8 @@ execSync('bun install');
 
 // for each binary, run bun
 for (binName of Object.keys(bin)) {
-    const binScript = `${packageDir}/${bin[binName]}`;
-    const binPath = `${packageDir}/${binName}${binExt}`;
+    // bun knows these paths are relative to the package.json on its own
+    const binScript = `${bin[binName]}`;
+    const binPath = `${binName}${binExt}`;
     execSync(`bun build ${binScript} --compile --target ${bunTarget} --outfile ${binPath}`);
 }
