@@ -3,6 +3,7 @@
 # binaries
 /axolotlsay-bun*
 /index*
+bun.lockb
 
 # but *don't* ignore the source file
 !index.js
