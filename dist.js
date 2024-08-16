@@ -1,4 +1,7 @@
-const { bin } = require("./package.json");
+// You may need to edit this path if you move this script!
+const packageDir = '.';
+
+const { bin } = require(`${packageDir}/package.json`);
 const execSync = require('child_process').execSync;
 
 // Compute the target we're building for
@@ -24,7 +27,7 @@ execSync("bun install");
 
 // for each binary, run bun
 for (binName of Object.keys(bin)) {
-    const binScript = bin[binName];
-    const binPath = `${binName}${binExt}`;
+    const binScript = `${packageDir}/${bin[binName]}`;
+    const binPath = `${packageDir}/${binName}${binExt}`;
     execSync(`bun build ${binScript} --compile --target ${bunTarget} --outfile ${binPath}`);
 }
